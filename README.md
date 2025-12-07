@@ -23,18 +23,9 @@ I'm building **HCS-U7** (Human Cognitive Signature) — the first cognitive biom
 
 **My approach**: Instead of testing what AI *can do* (image recognition, OCR), I measure what AI *cannot be* — a biological brain with its temporal constraints, fatigue patterns, and cognitive interference effects.
 
-### Core Innovations
-
-| Innovation | Description |
-|------------|-------------|
-| **Cognitive Biometrics** | 6 validated tests (Stroop 1935, N-Back 1958, Trail Making, Digit Span, Reaction Time, RAN Vocal) |
-| **Celestial Entropy Layer** | Cryptographic entropy from real-time planetary positions (Swiss Ephemeris) |
-| **Defense-in-Depth** | 7-layer security architecture with behavioral firewall |
-| **Score Combiner** | Adaptive multi-signal fusion (HCS, Device, Network, Behavior, Trust Graph) |
-
 ---
 
-## 🛡️ Intellectual Property
+## 🛡️ Patents
 
 **2 French patents filed** — 20-year protection
 
@@ -43,13 +34,9 @@ I'm building **HCS-U7** (Human Cognitive Signature) — the first cognitive biom
 | **FR2514274** | Nov 30, 2025 | Multi-layer cognitive biometric authentication system resistant to generative AI |
 | **FR2514546** | Dec 4, 2025 | Cognitive security system with behavioral firewall, astronomical entropy, and adaptive SCA engine |
 
-> *Per Article L. 612-10 of the French Intellectual Property Code, the Minister of Defense has been authorized to examine these applications confidentially.*
-
 ---
 
 ## 📊 Validated Performance
-
-<div align="center">
 
 | Metric | Value |
 |--------|-------|
@@ -57,49 +44,16 @@ I'm building **HCS-U7** (Human Cognitive Signature) — the first cognitive biom
 | **Bot Detection (TNR)** | 99.6% |
 | **AI Detection** | >99% (GPT-4V, Claude 3, Gemini) |
 | **AUC-ROC** | 0.994 |
-| **P95 Latency** | <50ms |
-| **Unit Tests** | 230+ |
-
-</div>
 
 ---
 
 ## 🛠️ Tech Stack
-
 ```
-Backend       Fastify 5 · TypeScript · Zod · Vitest
+Backend       Fastify 5 · TypeScript · Zod · Vitest · 230+ tests
 Persistence   PostgreSQL · Prisma ORM · Redis
-Crypto        HMAC-SHA256 · bcrypt · JWT · Swiss Ephemeris · NIST-PQC ready
+Crypto        HMAC-SHA256 · bcrypt · JWT · Swiss Ephemeris
 Frontend      Next.js 14 · TailwindCSS · Framer Motion
-Infra         Docker · Railway · Vercel
 ```
-
----
-
-## 🎓 Academic Work
-
-**Doctoral Thesis** *(in progress)*  
-*Cognitive Authentication and Human-AI Differentiation*
-
-Chapters:
-- Celestial Entropy Layer — astronomical entropy for cryptographic nonces
-- Validated cognitive tests — neuroscience foundations (1868-1974)
-- Defense-in-Depth architecture — multi-signal behavioral firewall
-- PSD2 SCA compliance — Strong Customer Authentication (EU 2018/389)
-
----
-
-## 🏢 About IA Solution
-
-**IA Solution** is a French cognitive AI research laboratory focused on:
-
-1. **Cognitive Biometrics** — Human identification via unique cognitive patterns
-2. **Belief Cryptography** — Mathematically formalizing symbolic systems (Western + BaZi fusion)
-3. **Generative AI Resistance** — Detecting GPT-4V, Claude 3, Gemini with >99% accuracy
-4. **Post-Quantum Cryptography** — NIST-PQC preparation, QSIG signatures
-
-📍 Based in Occitanie, France  
-🔗 [ia-solution.fr](https://ia-solution.fr) · [hcs-u7.com](https://hcs-u7.com)
 
 ---
 
@@ -111,19 +65,10 @@ Chapters:
 | **Phone** | +33 7 44 14 96 17 |
 | **Location** | Alès, Occitanie, France 🇫🇷 |
 
-### Open to
-
-- **Research partnerships** — R&D collaboration, co-publication, thesis co-supervision
-- **Enterprise licensing** — Commercial API integration, dedicated support
-- **Government projects** — Critical infrastructure protection, digital sovereignty
-
 ---
 
 <div align="center">
 
-**Made in France** 🇫🇷
-
 *"We don't test what AI can do — we measure what it cannot be."*
 
 </div>
-
