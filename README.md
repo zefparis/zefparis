@@ -40,9 +40,9 @@ Developing an autonomous celestial navigation system for GPS-denied environments
 
 | Patent | Date Filed | Title |
 |--------|------------|-------|
-| **FR2514274** | Nov 30, 2024 | Multi-layer cognitive biometric authentication system resistant to generative AI |
-| **FR2514546** | Dec 4, 2024 | Cognitive security system with behavioral firewall, astronomical entropy, and adaptive SCA engine |
-| **FR2514XXX** | Dec 2024 | Multi-camera omnidirectional celestial navigation system for autonomous GPS validation and spoofing detection |
+| **FR2514274** | Nov 30, 2025 | Multi-layer cognitive biometric authentication system resistant to generative AI |
+| **FR2514546** | Dec 4, 2025 | Cognitive security system with behavioral firewall, astronomical entropy, and adaptive SCA engine |
+| **FR2514XXX** | Dec 2025 | Multi-camera omnidirectional celestial navigation system for autonomous GPS validation and spoofing detection |
 
 *Patent numbers subject to confirmation by INPI*
 
@@ -199,7 +199,7 @@ Aerospace:
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
 
-*Last updated: December 2024*
+*Last updated: December 2025*
 
 </div>
 
