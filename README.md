@@ -1,212 +1,104 @@
-# Benjamin BARRERE
+Benjamin Barrere
 
-<div align="center">
+Founder & Research Director @ IA Solution
+Cognitive security systems · AI-resistant authentication · Secure navigation
 
-**Founder & Research Director @ IA Solution**  
-*Cognitive Biometrics · Celestial Navigation · Post-Quantum Cryptography · Generative AI Resistance*
+🌐 https://ia-solution.fr
 
-[![Website](https://img.shields.io/badge/ia--solution.fr-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white)](https://ia-solution.fr)
-[![HCS-U7](https://img.shields.io/badge/HCS--U7-10B981?style=for-the-badge)](https://hcs-u7.com)
-[![Patents](https://img.shields.io/badge/INPI_Patents-3-F59E0B?style=for-the-badge)](https://www.inpi.fr/)
-[![Email](https://img.shields.io/badge/Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@ia-solution.fr)
+🔐 https://hcs-u7.com
 
-</div>
+Overview
 
----
+I design and build security systems focused on resilience, not on assumptions about attacker capabilities.
 
-## 🔬 Current Research
+My work explores how modern systems can remain reliable in environments where:
 
-### 🧠 **HCS-U7** — Cognitive Biometric Authentication
-Building the first cognitive biometric authentication system designed to resist generative AI attacks.
+generative AI is used offensively,
 
-**The problem**: 94% of traditional CAPTCHAs are now bypassed by GPT-4V (ETH Zurich, 2024).
+automation scales attacks,
 
-**My approach**: Instead of testing what AI *can do* (image recognition, OCR), I measure what AI *cannot be* — a biological brain with its temporal constraints, fatigue patterns, and cognitive interference effects.
+traditional static secrets are no longer sufficient.
 
-### 🛰️ **CelestialCube** — GPS Anti-Spoofing Navigation
-Developing an autonomous celestial navigation system for GPS-denied environments and spoofing detection.
+The approach is architecture-driven, combining time-bound validation, context awareness, and defense-in-depth.
 
-**The problem**: GPS spoofing attacks are increasing (500+ incidents in 2023), threatening autonomous vehicles and drones.
+Current Projects
+HCS-U7 — Cognitive Authentication System
 
-**My solution**: Multi-camera omnidirectional system (6× 360° coverage) using real-time celestial object detection (sun, moon, stars) to validate GPS integrity and enable GPS-denied navigation with ±50m precision.
+HCS-U7 is an authentication and bot-resistance platform designed for AI-heavy threat environments.
 
-**Technology**: NVIDIA Jetson Orin Nano, 6× RPi Camera v3, YOLO-World AI, consensus algorithm.
+High-level principles:
 
----
+No long-lived secrets
 
-## 🛡️ Patents
+Short-lived, one-time validation artifacts
 
-**3 French patents filed** — 20-year protection
+Multi-layer verification (edge + backend)
 
-| Patent | Date Filed | Title |
-|--------|------------|-------|
-| **FR2514274** | Nov 30, 2025 | Multi-layer cognitive biometric authentication system resistant to generative AI |
-| **FR2514546** | Dec 4, 2025 | Cognitive security system with behavioral firewall, astronomical entropy, and adaptive SCA engine |
-| **FR2514XXX** | Dec 2025 | Multi-camera omnidirectional celestial navigation system for autonomous GPS validation and spoofing detection |
+Fail-closed by design
 
-*Patent numbers subject to confirmation by INPI*
+The system is intended for use cases where traditional CAPTCHA or static challenges are no longer effective.
 
----
+Public repositories intentionally expose no internal thresholds, metrics, or attack details.
 
-## 📊 Validated Performance
+CelestialCube — Autonomous Navigation Validation
 
-### HCS-U7 Authentication System
+CelestialCube explores navigation integrity in GPS-degraded or GPS-denied environments.
 
-| Metric | Value |
-|--------|-------|
-| **Global Accuracy** | 98.9% |
-| **Bot Detection (TNR)** | 99.6% |
-| **AI Detection** | >99% (GPT-4V, Claude 3, Gemini) |
-| **AUC-ROC** | 0.994 |
-| **False Positive Rate** | <0.5% |
+High-level concepts:
 
-### CelestialCube Navigation System
+Independent navigation validation
 
-| Metric | Value |
-|--------|-------|
-| **GPS Spoofing Detection** | 99.2% accuracy |
-| **Detection Latency** | <100ms real-time |
-| **GPS-Denied Precision** | ±50m (celestial triangulation) |
-| **Sky Coverage** | 360° omnidirectional |
-| **Operational Conditions** | Day, night, twilight |
+Multi-sensor observation
 
----
+Real-time anomaly detection
 
-## 🛠️ Tech Stack
+The project targets safety-critical domains where external signals cannot be blindly trusted.
 
-### HCS-U7 Platform
-```
-Backend       Fastify 5 · TypeScript · Zod · Vitest · 230+ tests
-Persistence   PostgreSQL · Prisma ORM · Redis
-Crypto        HMAC-SHA256 · bcrypt · JWT · Swiss Ephemeris
-Frontend      Next.js 14 · TailwindCSS · Framer Motion
-Security      Rate limiting · CSRF · XSS protection · Honeypots
-```
+Engineering Philosophy
 
-### CelestialCube System
-```
-Compute       NVIDIA Jetson Orin Nano 8GB · CUDA 12.2
-Vision        6× Raspberry Pi Camera v3 (12MP) · MIPI CSI-2
-AI/ML         PyTorch 2.0 · TensorRT · YOLO-World · OpenCV
-Navigation    GPS u-blox NEO-M8T · PPS sync · Ephem calculations
-Comm          MAVLINK · ROS2 · Telemetry real-time
-```
+Architecture over claims
 
----
+Measured behavior over assumptions
 
-## 🎯 Key Projects
+Fail-closed over best-effort
 
-### 🔐 [HCS-U7](https://hcs-u7.com) — Cognitive Authentication
-- **Status**: Production-ready (v8.1)
-- **Use Cases**: Banking (PSD2), Healthcare (HIPAA), Defense
-- **Deployment**: Cloud SaaS + On-premise
-- **Compliance**: GDPR, ISO 27001, PSD2 SCA
+Attack cost over attack probability
 
-### 🛰️ CelestialCube — Anti-Spoofing GPS
-- **Status**: Prototype TRL 7 (functional demonstration)
-- **Markets**: Autonomous drones, defense UAV, automotive
-- **Certifications**: DO-178C Level C (roadmap), MIL-STD-810H
-- **Funding**: Seeking Series Seed €500k
+Security decisions are driven by invariants, not by obscurity.
 
-### 🚁 CORTEX-ARENA — Cybersecurity Platform
-- **Penetration testing gamification**
-- **Real-time attack simulation**
-- **Educational cybersecurity training**
+Technology (High-Level)
 
----
+This repository and related public codebases use modern, well-established tooling:
 
-## 📈 Business Traction
+TypeScript / Node.js
 
-### HCS-U7
-- **10+ LOI** (Letters of Intent) from corporate clients
-- **3-year revenue projection**: €22.2M (hardware + licensing + SaaS)
-- **Markets**: €7.5Bn TAM (GPS anti-spoofing global)
+Strong cryptographic primitives
 
-### CelestialCube
-- **Target markets**: Defense (€2.45M/year), Civil aviation, Autonomous vehicles
-- **Pricing**: €800-€1,200/unit (production series)
-- **Competitive advantage**: Only autonomous 360° celestial system
+Edge-based security enforcement
 
----
+Automated testing and validation
 
-## 🎓 Expertise
+Exact configurations, thresholds, and security parameters are not public by design.
 
-```yaml
-Security:
-  - Cognitive biometrics
-  - Post-quantum cryptography
-  - Generative AI attack vectors
-  - Zero-knowledge protocols
+Patents & Research
 
-AI/ML:
-  - Computer vision (YOLO, TensorRT)
-  - Behavioral pattern recognition
-  - LSTM time-series analysis
-  - Edge computing optimization
+Several patent filings cover aspects of cognitive authentication and navigation integrity.
+Details are available through official channels or under NDA.
 
-Systems:
-  - Embedded systems (NVIDIA Jetson, Raspberry Pi)
-  - Real-time processing (<100ms latency)
-  - Autonomous navigation algorithms
-  - Multi-sensor fusion
+Collaboration
 
-Aerospace:
-  - Celestial navigation (traditional + modern)
-  - GPS/GNSS anti-spoofing
-  - Drone autopilot integration (MAVLINK)
-  - DO-178C certification (roadmap)
-```
+Open to:
 
----
+Technical partnerships
 
-## 🏆 Recognition
+Research collaboration
 
-- **INPI Patents**: 3 filed (cognitive auth + celestial nav)
-- **Research**: Post-quantum cryptography, AI resistance
-- **Innovation**: First cognitive biometric system resistant to GPT-4V
-- **Markets**: Dual-use technology (civil + defense)
+Security audits and evaluations
 
----
+Industrial pilots
 
-## 📬 Contact
+📩 contact@ia-solution.fr
 
-| | |
-|---|---|
-| **Email** | contact@ia-solution.fr |
-| **Phone** | +33 7 44 14 96 17 |
-| **Location** | Alès, Occitanie, France 🇫🇷 |
-| **Company** | IA-SOLUTION (Auto-entrepreneur) |
-| **Website** | [ia-solution.fr](https://ia-solution.fr) |
+📍 France (Occitanie)
 
----
-
-## 💼 Open to Collaboration
-
-**Seeking partnerships for:**
-- 🚀 Series Seed funding (€500k) for CelestialCube production
-- 🏢 Corporate pilots (HCS-U7 authentication)
-- 🎓 Research collaboration (universities, labs)
-- 🛡️ Defense contracts (GPS anti-spoofing, secure authentication)
-- 🌍 International expansion (EU, US, Asia)
-
----
-
-<div align="center">
-
-**"Building unhackable systems for a sovereign future"**
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/benjamin-barrere)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/yourusername)
-
-*Last updated: December 2025*
-
-</div>
-
----
-
-<div align="center">
-
-*"We don't test what AI can do — we measure what it cannot be."*
-
-</div>
+“Security is not about what an attacker can do — it’s about what the system refuses to accept.”
