@@ -1,104 +1,106 @@
-Benjamin Barrere
+# Benjamin Barrère
 
-Founder & Research Director @ IA Solution
-Cognitive security systems · AI-resistant authentication · Secure navigation
+**Founder & Solo Developer — IA-SOLUTION**  
+Alès, Occitanie, France · [ia-solution.fr](https://ia-solution.fr) · [hcs-u7.com](https://hcs-u7.com)
 
-🌐 https://ia-solution.fr
+---
 
-🔐 https://hcs-u7.com
+I build security systems designed to operate under adversarial conditions — where generative AI is used offensively, automation scales attacks, and traditional static secrets are no longer sufficient.
 
-Overview
+My approach is architecture-driven: time-bound validation, behavioral biometrics, post-quantum cryptography, and defense-in-depth across every layer.
 
-I design and build security systems focused on resilience, not on assumptions about attacker capabilities.
+Three INPI patents. French Ministry of Defence clearance. Everything built solo.
 
-My work explores how modern systems can remain reliable in environments where:
+---
 
-generative AI is used offensively,
+## Patents
 
-automation scales attacks,
+| Reference | Subject |
+|-----------|---------|
+| FR2514274 | Post-quantum cognitive authentication |
+| FR2514546 | Celestial entropy layer for cryptographic systems |
+| FR2515560 | Multi-sensor GPS anti-spoofing with Byzantine consensus |
 
-traditional static secrets are no longer sufficient.
+All three authorized by the French Ministry of Defence. IP counsel: Brandon IP, Paris.
 
-The approach is architecture-driven, combining time-bound validation, context awareness, and defense-in-depth.
+---
 
-Current Projects
-HCS-U7 — Cognitive Authentication System
+## Projects
 
-HCS-U7 is an authentication and bot-resistance platform designed for AI-heavy threat environments.
+### HCS-U7 — Cognitive Authentication SaaS
+Production SaaS. Neuropsychological test battery (Stroop, NeuralReflex, DigitSpan, RAN Vocal, reaction time) generating non-reproducible behavioral signatures. Post-quantum stack: ML-KEM-768 / ML-DSA-65. Celestial entropy layer. Brain ML v2.0 autonomous threat loop (Groq / Llama 3.1, ~0.5s latency, live IP auto-ban). Red team validated — zero exploits across multiple campaigns.
 
-High-level principles:
+`Next.js` `Fastify` `Supabase` `PostgreSQL` `AWS` `Vercel` · [hcs-u7.com](https://hcs-u7.com)
 
-No long-lived secrets
+---
 
-Short-lived, one-time validation artifacts
+### HCS-SHIELD — Tactical Drone Operator PWA
+Offline-first PWA for drone operators. Cognitive authentication gate, mission planning with AES-256-GCM encrypted QR payloads, duress mode with plausible deniability, crypto-shredding panic button, tamper guard. Zero-trust architecture — all data local.
 
-Multi-layer verification (edge + backend)
+`Next.js 16` `React 19` `TailwindCSS 4` `Dexie` `Mapbox` `WASM` · Patents FR2514274, FR2514546
 
-Fail-closed by design
+---
 
-The system is intended for use cases where traditional CAPTCHA or static challenges are no longer effective.
+### CORTEX-U7 — GPS-Denied Autonomous Navigation
+Absolute positioning via onboard celestial computation. No GPS, no drift, no prior mapping required. Spoof detection by divergence between computed and received GNSS position. ROS2-ready interface. Designed for lightweight tactical UAVs.
 
-Public repositories intentionally expose no internal thresholds, metrics, or attack details.
+`React` `Three.js` `ROS2` `astronomy-engine (VSOP87)` `HMAC-SHA3-512` · Patent FR2515560 · [Live demo](https://drones-omega.vercel.app)
 
-CelestialCube — Autonomous Navigation Validation
+---
 
-CelestialCube explores navigation integrity in GPS-degraded or GPS-denied environments.
+### Hybrid Vector — Connected Commercial Vehicle Platform
+Guard module suite for commercial vehicles targeting the South African market. Five deployed modules: EdGuard, WorkGuard, PayGuard, AccessGuard, SignGuard.
 
-High-level concepts:
+`React Native` `NestJS` `Render Pro (Frankfurt)` `Vercel` · ZAR pricing · Partnership: HMH, South Africa
 
-Independent navigation validation
+**App Store**
+- EdGuard — [ID 6764321877](https://apps.apple.com/app/id6764321877)
+- PayGuard SA — submitted
 
-Multi-sensor observation
+---
 
-Real-time anomaly detection
+### hcs-id-scanner — KYC Identity Verification
+Android APK for field identity verification. MRZ optical scan → NFC ePassport chip read → AWS Rekognition face match. Signed, deployed on physical device.
 
-The project targets safety-critical domains where external signals cannot be blindly trusted.
+`React Native` `vision-camera` `NFC` `AWS Rekognition`
 
-Engineering Philosophy
+---
 
-Architecture over claims
+### Sky Play — Esports Platform (Africa)
+Competitive gaming platform targeting African players. CFA-denominated entry fees, dispute module, wallet payouts, Flutterwave integration, AWS Cognito auth, KYC compliance, self-exclusion, device fingerprinting.
 
-Measured behavior over assumptions
+`Next.js` `NestJS` `PostgreSQL` `Railway PRO` `Vercel` · [skyplay.cloud](https://skyplay.cloud)
 
-Fail-closed over best-effort
+---
 
-Attack cost over attack probability
+### PERSPECTA — Career Assessment Platform
+RIASEC profiling + cognitive assessment. France Travail API integration. Blockchain certification. 49 EUR vs 1,500–3,000 EUR traditional equivalent.
 
-Security decisions are driven by invariants, not by obscurity.
+`Next.js` `Supabase` `France Travail API`
 
-Technology (High-Level)
+---
 
-This repository and related public codebases use modern, well-established tooling:
+### Congo Gaming — Licensed Operator
+Licensed gaming and aggregation operator, DRC.
 
-TypeScript / Node.js
+---
 
-Strong cryptographic primitives
+## Stack
 
-Edge-based security enforcement
+**Languages** — TypeScript, Python, Rust, SQL  
+**Frontend** — Next.js, React, React Native, TailwindCSS, Framer Motion  
+**Backend** — Fastify, NestJS, Supabase, PostgreSQL, Redis  
+**Infra** — Vercel, Render Pro, Railway, AWS (Rekognition, Cognito, S3)  
+**Security** — ML-KEM-768, ML-DSA-65, HMAC-SHA3-512, BLAKE3, WebAuthn FIDO2, AES-256-GCM  
+**AI/ML** — Groq API, Llama 3.1, GBM autonomous loop, AWS Rekognition  
+**Embedded/Robotics** — ROS2, WASM, astronomy-engine VSOP87, IGRF-13  
 
-Automated testing and validation
+---
 
-Exact configurations, thresholds, and security parameters are not public by design.
+## Company
 
-Patents & Research
-
-Several patent filings cover aspects of cognitive authentication and navigation integrity.
-Details are available through official channels or under NDA.
-
-Collaboration
-
-Open to:
-
-Technical partnerships
-
-Research collaboration
-
-Security audits and evaluations
-
-Industrial pilots
-
-📩 contact@ia-solution.fr
-
-📍 France (Occitanie)
+**IA-SOLUTION** — Auto-entrepreneur  
+SIRET 438 055 097 00036 · 2 Rue du Sabotier, 30350 Saint-Bénézet, France  
+[contact@ia-solution.fr](mailto:contact@ia-solution.fr)
 
 “Security is not about what an attacker can do — it’s about what the system refuses to accept.”
